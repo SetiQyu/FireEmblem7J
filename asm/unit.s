@@ -1901,7 +1901,7 @@ _08018C0E:
 	ldr r0, _08018C1C @ =0x08C4F468
 	adds r0, r1, r0
 _08018C16:
-	ldrb r0, [r0, #6]
+	ldrb r0, [r0, #7]
 	bx lr
 	.align 2, 0
 _08018C1C: .4byte 0x08C4F468
@@ -2596,8 +2596,8 @@ _08019104: .4byte gUnitLut
 
 	thumb_func_start GetClassData
 GetClassData: @ 0x08019108
-	adds r1, r0, #0
-	cmp r1, #0
+	adds r1, r0, #1
+	cmp r1, #1
 	ble _0801911C
 	movs r0, #0x54
 	muls r0, r1, r0
