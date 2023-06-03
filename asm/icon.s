@@ -174,8 +174,8 @@ _08004CEC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08004CFC: .4byte 0x080C12F4
 _08004D00: .4byte 0x0001FFE0
+_08004CFC: .4byte 0x080C12F4
 
 	thumb_func_start sub_08004D04
 sub_08004D04: @ 0x08004D04
@@ -265,6 +265,7 @@ _08004DA0: .4byte 0x06010000
 _08004DA4: .4byte 0x000003FF
 _08004DA8:
 	ldr r4, _08004DD0 @ =0x080C12F4
+	ldr r4, [r4]
 	lsls r0, r2, #7
 	adds r4, r0, r4
 	adds r0, r4, #0
@@ -280,7 +281,6 @@ _08004DA8:
 	bl RegisterDataMove
 _08004DC8:
 	pop {r4, r5}
-	pop {r0}
-	bx r0
+	pop {pc}
 	.align 2, 0
 _08004DD0: .4byte 0x080C12F4

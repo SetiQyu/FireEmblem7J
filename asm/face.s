@@ -9,6 +9,7 @@ GetPortraitData: @ 0x080069B0
 	lsls r0, r0, #2
 	ldr r1, _080069C0 @ =0x08D5E23C
 	adds r0, r0, r1
+	adds r0, #2
 	bx lr
 	.align 2, 0
 _080069C0: .4byte 0x08D5E23C

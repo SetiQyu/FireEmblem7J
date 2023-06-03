@@ -132,14 +132,14 @@ sub_080251EC: @ 0x080251EC
 	movs r4, #0x7f
 	ands r4, r7
 	lsls r4, r4, #3
-	adds r0, r5, #4
+	adds r0, r5, #6
 	adds r0, r4, r0
 	ldr r0, [r0]
 	ldr r1, _08025230 @ =0x08C03100
 	ldr r1, [r1]
 	bl sub_08013688
 	adds r4, r4, r5
-	ldrh r0, [r4, #2]
+	ldrh r0, [r4, #4]
 	cmp r0, #1
 	beq _08025244
 	cmp r0, #1

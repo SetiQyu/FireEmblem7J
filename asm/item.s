@@ -54,7 +54,7 @@ GetItemHpBonus: @ 0x080164BC
 	lsls r1, r1, #2
 	ldr r0, _080164DC @ =0x08C51538
 	adds r1, r1, r0
-	ldr r0, [r1, #0xc]
+	ldr r0, [r1, #0x10]
 	cmp r0, #0
 	bne _080164E0
 _080164D6:
@@ -81,7 +81,7 @@ sub_080164E8: @ 0x080164E8
 	lsls r1, r1, #2
 	ldr r0, _08016508 @ =0x08C51538
 	adds r1, r1, r0
-	ldr r0, [r1, #0xc]
+	ldr r0, [r1, #0x10]
 	cmp r0, #0
 	bne _0801650C
 _08016502:
@@ -108,7 +108,7 @@ sub_08016514: @ 0x08016514
 	lsls r1, r1, #2
 	ldr r0, _08016534 @ =0x08C51538
 	adds r1, r1, r0
-	ldr r0, [r1, #0xc]
+	ldr r0, [r1, #0x10]
 	cmp r0, #0
 	bne _08016538
 _0801652E:
@@ -135,7 +135,7 @@ sub_08016540: @ 0x08016540
 	lsls r1, r1, #2
 	ldr r0, _08016560 @ =0x08C51538
 	adds r1, r1, r0
-	ldr r0, [r1, #0xc]
+	ldr r0, [r1, #0x10]
 	cmp r0, #0
 	bne _08016564
 _0801655A:
@@ -162,7 +162,7 @@ sub_0801656C: @ 0x0801656C
 	lsls r1, r1, #2
 	ldr r0, _0801658C @ =0x08C51538
 	adds r1, r1, r0
-	ldr r0, [r1, #0xc]
+	ldr r0, [r1, #0x10]
 	cmp r0, #0
 	bne _08016590
 _08016586:
@@ -189,7 +189,7 @@ sub_08016598: @ 0x08016598
 	lsls r1, r1, #2
 	ldr r0, _080165B8 @ =0x08C51538
 	adds r1, r1, r0
-	ldr r0, [r1, #0xc]
+	ldr r0, [r1, #0x10]
 	cmp r0, #0
 	bne _080165BC
 _080165B2:

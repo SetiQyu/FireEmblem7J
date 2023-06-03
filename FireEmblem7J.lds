@@ -11,6 +11,11 @@ SECTIONS
 	ALIGN(4)
 	{
 		. = 0x02BBF4; gPlaySt = .;
+
+		. = 0x02BD4C; gUnitArrayBlue = .;
+		. = 0x02CEBC; gUnitArrayRed = .;
+		. = 0x02DCCC; gUnitArrayGreen = .;
+		. = 0x02E26C; gUnitArrayPurple = .;
 	}
 
 	. = 0x03000000;
